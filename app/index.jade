@@ -2,10 +2,15 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Client Template
+    title Checkers
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 Client Template
+    table#board
+      tbody
+        - for(var y = 0; y < 8; y++)
+          tr
+            - for(var x = 0; x < 8; x++)
+              td(data-x=x, data-y=y, class=((x+y) % 2) ? 'valid' : '')
 
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/source/main.js')
