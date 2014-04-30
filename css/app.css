@@ -1,0 +1,29 @@
+table {
+  border: 1px solid #cccccc;
+}
+td {
+  padding: 25px;
+  border: 1px solid #ffffff;
+}
+.valid {
+  background-color: #cccccc;
+  background-size: cover;
+}
+.active {
+  background-color: #222222 !important;
+}
+.selected {
+  border: 1px solid red;
+}
+.js {
+  background-image: url('../media/js.png');
+}
+.ruby {
+  background-image: url('../media/ruby.png');
+}
+.js.king {
+  background-image: url('../media/node.png');
+}
+.ruby.king {
+  background-image: url('../media/rails.png');
+}
